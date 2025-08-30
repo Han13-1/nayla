@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import 'aos/dist/aos.css';
+import { Helmet } from "react-helmet";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 
@@ -34,6 +35,10 @@ import AppartementVilla from "./pages/produits/immobilier/appartement-villa";
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Nayla Invest - Votre partenaire immobilier</title>
+        <link rel="icon" href="/naylalogo.png" />
+      </Helmet>
       <Navbar />
 
       <Routes>
