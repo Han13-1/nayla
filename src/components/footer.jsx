@@ -59,11 +59,11 @@ export default function Footer() {
             </div>
             <div className="contact-item">
               <Phone size={16} />
-              <span>+212 539 123 456</span>
+              <span>+212 661-383661</span>
             </div>
             <div className="contact-item">
               <Mail size={16} />
-              <span>contact@naylainvest.ma</span>
+              <span>contact@nayla-invest.com</span>
             </div>
           </div>
         </div>

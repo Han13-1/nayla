@@ -1,35 +1,36 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import promoVideo from "./presentation.mp4";
+import { TrendingUp, Building2, BarChart3 } from "lucide-react";
 
 export default function Home() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const navigate = useNavigate();
 
   const teamMembers = [
-    { name: "Mohamed Bennani", role: "Directeur Général", img: "/logo192.png" },
-    { name: "Fatima Zahra El Amrani", role: "Directrice des Opérations", img: "/logo192.png" },
-    { name: "Ahmed Tazi", role: "Directeur Commercial", img: "/logo192.png" },
-    { name: "Leila Berrada", role: "Directrice Financière", img: "/logo192.png" }
+    { name: "Amal karbass benomar", role: "Direction General", img: "/amalpic.jpg" },
+    { name: "Alae Benomar", role: "Direction Technique", img: "/alaepic.png" },
+    { name: "Khouloud el Mrabet", role: "Direction Commercial", img: "/Khouloudpic.png" },
+    { name: "Mouad el Yazid", role: "Relation Publique", img: "/mouadpic.png" }
   ];
 
   const features = [
     {
       title: "Zone d'Activité Intégrée",
       description: "Développement de galeries commerciales urbaines et extra-urbaines innovantes pour dynamiser l'économie locale et offrir des espaces commerciaux modernes.",
-      img: "/logo192.png",
+      img: "/naylalogo.png",
       link: "/produits/zone-activite/gallerie-commerciale-urbaine",
     },
     {
       title: "Complexes Touristiques",
-      description: "Création d'hôtels, résidences touristiques et espaces d'animation pour offrir des expériences uniques et contribuer au développement touristique.",
-      img: "/logo192.png",
+      description: "Création d'hôtels, résidences touristiques et espaces d'animation pour offrir des expériences uniques et contribuer au Développement touristique au Maroc et à l'étranger.",
+      img: "/naylalogo.png",
       link: "/produits/hotel-complexe/hotellerie",
     },
     {
       title: "Immobilier Résidentiel",
-      description: "Construction d'espaces de bureaux modernes, d'appartements et de villas alliant confort, design et durabilité pour répondre à tous vos besoins.",
-      img: "/logo192.png",
+      description: "Nous mettons à votre disposition des espaces de vie modernes et spacieux, conçus pour allier confort, élégance et convivialité. Nos appartements et villas sont soigneusement pensés et adaptés à vos besoins afin de vous offrir un cadre idéal, que ce soit pour votre quotidien ou vos moments de détente.",
+      img: "/naylalogo.png",
       link: "/produits/immobilier/appartement-villa",
     }
   ];
@@ -38,19 +39,19 @@ export default function Home() {
     {
       title: "Conseil en Investissement",
       description: "Expertise en placement et investissement immobilier pour optimiser votre patrimoine.",
-      icon: "📊"
+      icon: TrendingUp
     },
     {
-      title: "Property Management",
+      title: "Property Management", 
       description: "Gestion complète de vos biens immobiliers avec professionnalisme et efficacité.",
-      icon: "🏢"
+      icon: Building2
     },
     {
       title: "Commercialisation",
       description: "Stratégies de commercialisation innovantes pour vos projets immobiliers.",
-      icon: "📈"
+      icon: BarChart3
     }
-  ];
+];
 
   const handleVideoLoad = () => {
     setIsVideoLoaded(true);
@@ -90,7 +91,7 @@ export default function Home() {
 
         <div className="hero-content-home">
           <h1 className="brand-text-hero">NAYLA INVEST</h1>
-          <p className="hero-tagline-home">Votre Vision, Notre Innovation</p>
+          <p className="hero-tagline-home">Votre partenaire clé pour la reussite</p>
         </div>
       </section>
 
@@ -100,7 +101,7 @@ export default function Home() {
           <div className="row-home">
             <div className="col-lg-6-home about-image-col">
               <div className="about-image-wrapper">
-                <img src="/logo192.png" alt="Nayla Invest - À propos" className="about-image" />
+                <img src="/naylalogo.png" alt="Nayla Invest - À propos" className="about-image" />
                 <div className="about-image-overlay"></div>
               </div>
             </div>
@@ -111,22 +112,22 @@ export default function Home() {
                 </h2>
                 <div className="about-text">
                   <p className="about-intro">
-                    Nayla Invest est une société leader dans le développement immobilier et la gestion de projets innovants au Maroc. Avec une expertise reconnue dans divers secteurs, nous nous engageons à transformer vos visions en réalité.
+                    Nayla Invest est une société leader dans le développement immobilier et  en particulier en facility et property management. Avec une expertise reconnue dans la gestion et la commercialisation de projets immobiliers, nous nous engageons à vous proposer les clefs de la reussite.
                   </p>
                   <p className="about-description">
-                    Notre approche intégrée combine excellence technique, innovation architecturale et durabilité environnementale pour créer des espaces qui marquent leur époque et enrichissent les communautés.
+                    Notre approche intégrée combine expertise technique, innovation et design architecturale avec une durabilité et protection environnementale pour créer des espaces qui marquent leur époque et de la valeur Ajoutée.
                   </p>
                   <div className="about-stats">
                     <div className="stat-item">
-                      <span className="stat-number">15+</span>
+                      <span className="stat-number">3+</span>
                       <span className="stat-label">Années d'Expérience</span>
                     </div>
                     <div className="stat-item">
-                      <span className="stat-number">50+</span>
+                      <span className="stat-number">5+</span>
                       <span className="stat-label">Projets Réalisés</span>
                     </div>
                     <div className="stat-item">
-                      <span className="stat-number">100%</span>
+                      <span className="stat-number">80%</span>
                       <span className="stat-label">Satisfaction Client</span>
                     </div>
                   </div>
@@ -172,13 +173,18 @@ export default function Home() {
       </section>
 
       {/* ================= Services Section ================= */}
+      
       <section className="services-section-home">
-        <div className="container-home">
-          <h2 className="section-heading-hometext-center">Nos Services</h2>
-          <div className="services-grid">
-            {services.map((service, index) => (
+      <div className="container-home">
+      <h2 className="section-heading-home text-center">Nos Services</h2> 
+        <div className="services-grid">
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
               <div key={index} className="service-card-home">
-                <div className="service-icon-home">{service.icon}</div>
+                <div className="service-icon-home">
+                  <IconComponent size={32} className="text-blue-600" />
+                </div>
                 <h4>{service.title}</h4>
                 <p>{service.description}</p>
                 <button 
@@ -188,17 +194,18 @@ export default function Home() {
                   Découvrir →
                 </button>
               </div>
-            ))}
-          </div>
-          <div className="services-cta">
-            <button 
-              className="btn-primary-custom-home"
-              onClick={() => navigate('/services/conseil-placement')}
-            >
-              Voir Tous Nos Services
-            </button>
-          </div>
+            );
+          })}
         </div>
+        <div className="services-cta">
+          <button 
+            className="btn-primary-custom-home"
+            onClick={() => navigate('/services/conseil-placement')}
+          >
+            Voir Tous Nos Services
+          </button>
+        </div>
+      </div>
       </section>
 
       {/* ================= Meet the Team ================= */}
@@ -220,23 +227,41 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ================= Partners Slider ================= */}
-      <section className="partners-section-home">
+      {/* <section className="partners-section-home">
         <div className="container-home">
           <h2 className="section-heading-home text-center">Nos Partenaires de Confiance</h2>
           <div className="partners-slider-home">
             <div className="slide-track-home">
               {[...Array(10)].map((_, i) => (
                 <div key={i} className="slide-home">
-                  <img src="/logo192.png" alt={`Partner ${(i % 5) + 1}`} />
+                  <img src="/naylalogo.png" alt={`Partner ${(i % 5) + 1}`} />
                 </div>
               ))}
             </div>
           </div>
         </div>
-      </section>
-
+      </section> */}
+        {/* <section className="partners-section-home">
+          <div className="container-home">
+            <h2 className="section-heading-home text-center">Nos Partenaires de Confiance</h2>
+            <div className="partners-slider-home">
+              <div className="slide-track-home">
+                {[
+                  'Elite Office',
+                  'Rimal Martil',
+                  'Residence Ismail',
+                  'Jardins Andalouse',
+                  'Residence El Khalij'
+                ].map((partner, i) => (
+                  <div key={i} className="slide-home">
+                    <span className="partner-name">{partner}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section> */}
       {/* ================= Contact Section ================= */}
       <section className="contact-section-home">
         <div className="container-home">

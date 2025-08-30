@@ -500,15 +500,15 @@ export default function About() {
             </p>
             <div className={`hero-stats ${isVisible("hero") ? "animate-up" : ""}`}>
               <div className="stat-item">
-                <div className="stat-number">15+</div>
+                <div className="stat-number">3+</div>
                 <div className="stat-label">Années d'expérience</div>
               </div>
               <div className="stat-item">
-                <div className="stat-number">200+</div>
+                <div className="stat-number">5+</div>
                 <div className="stat-label">Projets réalisés</div>
               </div>
               <div className="stat-item">
-                <div className="stat-number">98%</div>
+                <div className="stat-number">80%</div>
                 <div className="stat-label">Satisfaction client</div>
               </div>
             </div>

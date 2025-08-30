@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Linkedin, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,17 +19,17 @@ export default function Contact() {
     {
       icon: <MapPin size={24} />,
       title: "Notre Adresse",
-      details: ["123 Avenue Mohammed V", "Tanger, Maroc 90000"]
+      details: ["11 Bis Lotissement NAHDA rue 31 etage 01 apt 03", "Tanger, Maroc, 90000"]
     },
     {
       icon: <Phone size={24} />,
       title: "Téléphone",
-      details: ["+212 5XX-XXXXXX", "+212 6XX-XXXXXX"]
+      details: ["+212 661-383661", "+212 661-040636", "+212 659-317088"]
     },
     {
       icon: <Mail size={24} />,
       title: "Email",
-      details: ["contact@nayla-invest.ma", "info@nayla-invest.ma"]
+      details: ["contact@nayla-invest.com", "press@nayla-invest.com"]
     }
   ];
 
@@ -61,7 +61,7 @@ export default function Contact() {
               transition={{ delay: 0.3 }}
             >
               <div className="company-info">
-                <img src="/logo192.png" alt="Nayla Invest Logo" className="company-logo" />
+                <img src="/naylalogo.png" alt="Nayla Invest Logo" className="company-logo" />
                 <p className="company-description">
                   Leader dans le développement immobilier et la gestion de projets innovants au Maroc
                 </p>
@@ -85,18 +85,10 @@ export default function Contact() {
               </div>
 
               <div className="social-links">
-                <a href='/' className="social-link">
-                  <Linkedin size={20} />
-                  <span>LinkedIn</span>
-                </a>
-                <a href='/' className="social-link">
-                  <Facebook size={20} />
-                  <span>Facebook</span>
-                </a>
-                <a href='/' className="social-link">
-                  <Instagram size={20} />
-                  <span>Instagram</span>
-                </a>
+                <a href="https://facebook.com" aria-label="Facebook"><Facebook size={18} /></a>
+                <a href="https://twitter.com" aria-label="Twitter"><Twitter size={18} /></a>
+                <a href="https://instagram.com" aria-label="Instagram"><Instagram size={18} /></a>
+                <a href="https://linkedin.com" aria-label="LinkedIn"><Linkedin size={18} /></a>
               </div>
             </motion.div>
 
